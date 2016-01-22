@@ -1,0 +1,15 @@
+#ifndef __INTERRUPT_MANAGER__
+#define __INTERRUPT_MANAGER__
+
+#include <HSystemManager>
+
+namespace kernel
+{
+
+class HInterruptManager : public HSystem::Manager
+{
+};
+
+}
+
+#endif

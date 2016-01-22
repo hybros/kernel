@@ -1,0 +1,13 @@
+                                     || MOSB  Multi-OS-Boot || -> Name noch verbesserungswürdig
+
+1.(!) Windows und Linux (erstmal hauptsächlich Debian) gleichzeitig laufen lassen
+2.    64 bit Kernel in C++ und Asm, der wenn nötig VT-x und VT-d (bzw. AMD-Gegenstücke), evtl. Realtime unterstützt
+      -> 32 bit Unterstützung integrieren (oder evtl. als Extrakernel)
+3.    Geräte sinnvoll und automatisch an die Betriebssystemkernel vergeben (! wahrscheinlich ziemlich schwierig !)
+  (!) -> Spiele auf Windows mit allen nötigen zum Laufen bekommen, ohne dass das andere Betriebssystem abstürzt oder sonst wie Probleme bereitet
+4.    eine GUI laufen lassen 
+      -> Auswahl zwischen Windows-Explorer und GNOME/KDE/etc.
+5.    Konfiguration sowohl unter Window als auch Linux möglich machen
+6.    Benutzer beider Betriebssysteme "verknüpfen", sodass, wenn man sich auf Linux anmeldet, man auch automatisch bei Windows angemeldet wird
+      -> damit verbunden Multi-User-Support für Windows (möglicherweise als Framework/Bibliothek entwickelt, um später ein Standalone-Programm für Windows rauszubringen)
+ 

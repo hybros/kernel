@@ -1,0 +1,2213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="bin" displayName="bin" projectFiles="true">
+      <logicalFolder name="boot" displayName="boot" projectFiles="true">
+        <logicalFolder name="grub" displayName="grub" projectFiles="true">
+          <itemPath>../../bin/boot/grub/grub.cfg</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>../../bin/hybros-kernel.elf</itemPath>
+    </logicalFolder>
+    <logicalFolder name="build" displayName="build" projectFiles="true">
+      <itemPath>../../debug.log</itemPath>
+      <itemPath>../../build/rebuild.bat</itemPath>
+      <itemPath>../../build/ssh_cmd.bat</itemPath>
+      <itemPath>../../build/ssh_cmd.txt</itemPath>
+      <itemPath>../../build/start_vbox.bat</itemPath>
+    </logicalFolder>
+    <df root=".." name="0">
+    </df>
+    <df root="../../src" name="1">
+      <df name="kernel">
+        <df name="build">
+          <df name="x86">
+            <in>vmm.hpp</in>
+          </df>
+        </df>
+        <df name="hstd">
+          <df name="include">
+            <df name="x86">
+              <in>bits.hpp</in>
+              <in>data_types.hpp</in>
+              <in>exceptions.hpp</in>
+              <in>integer.hpp</in>
+            </df>
+            <df name="x86-64">
+              <in>bits.hpp</in>
+              <in>data_types.hpp</in>
+              <in>exception.hpp</in>
+              <in>integer.hpp</in>
+            </df>
+            <in>bitfield.hpp</in>
+            <in>bitmap.hpp</in>
+            <in>bits.hpp</in>
+            <in>data_convert.hpp</in>
+            <in>data_extract.hpp</in>
+            <in>dynamic_memory.hpp</in>
+            <in>helper.hpp</in>
+            <in>integer.hpp</in>
+            <in>integer_helper.hpp</in>
+            <in>list.hpp</in>
+            <in>math.hpp</in>
+            <in>memory.h</in>
+            <in>memory.hpp</in>
+            <in>pointer_scoped.hpp</in>
+            <in>pointer_shared.hpp</in>
+            <in>pointer_unique.hpp</in>
+            <in>reference.hpp</in>
+            <in>reference_counter.hpp</in>
+            <in>reference_server.hpp</in>
+            <in>search.hpp</in>
+            <in>string.h</in>
+            <in>string.hpp</in>
+            <in>tuple.hpp</in>
+            <in>type_info.hpp</in>
+            <in>variant.hpp</in>
+            <in>vector.hpp</in>
+          </df>
+          <df name="src">
+            <df name="x86-64">
+              <in>bits.cpp</in>
+              <in>exception.cpp</in>
+              <in>memory.asm</in>
+              <in>string.asm</in>
+            </df>
+            <in>bitfield.cpp</in>
+            <in>bitmap.ipp</in>
+            <in>bits.ipp</in>
+            <in>data_convert.ipp</in>
+            <in>data_extract.ipp</in>
+            <in>dynamic_memory.ipp</in>
+            <in>helper.ipp</in>
+            <in>integer.ipp</in>
+            <in>integer_helper.ipp</in>
+            <in>list.ipp</in>
+            <in>memory.cpp</in>
+            <in>memory.ipp</in>
+            <in>pointer_scoped.ipp</in>
+            <in>pointer_shared.ipp</in>
+            <in>pointer_unique.ipp</in>
+            <in>reference.ipp</in>
+            <in>reference_counter.cpp</in>
+            <in>reference_server.ipp</in>
+            <in>search.ipp</in>
+            <in>string.cpp</in>
+            <in>string.ipp</in>
+            <in>vector.ipp</in>
+          </df>
+          <in>HBitOperations</in>
+          <in>HBitfield</in>
+          <in>HBitmap</in>
+          <in>HExceptions</in>
+          <in>HInteger</in>
+          <in>HList</in>
+          <in>HSharedPointer</in>
+          <in>HStdHelper</in>
+          <in>HStdMath</in>
+          <in>HStdTypes</in>
+          <in>HString</in>
+          <in>HTuple</in>
+          <in>HVector</in>
+          <in>cMemory</in>
+          <in>cString</in>
+        </df>
+        <df name="memory">
+          <df name="include">
+            <df name="x86-64">
+              <in>paging_structs.hpp</in>
+            </df>
+            <in>hmm.hpp</in>
+            <in>pmm.hpp</in>
+            <in>vmm.hpp</in>
+          </df>
+          <df name="src">
+            <df name="x86-64">
+              <in>paging_structs.ipp</in>
+            </df>
+            <in>hmm.ipp</in>
+            <in>pmm.ipp</in>
+            <in>vmm.ipp</in>
+          </df>
+          <in>HHeapMemoryManager</in>
+          <in>HPhysicalMemoryManager</in>
+          <in>HVirtualMemoryManager</in>
+        </df>
+        <df name="modules">
+          <df name="memory-managers">
+            <in>main.cpp</in>
+          </df>
+        </df>
+        <df name="processor">
+          <df name="include">
+            <df name="x86-64">
+              <in>idt.hpp</in>
+            </df>
+            <in>acpi_infos.hpp</in>
+            <in>gdt.hpp</in>
+            <in>idt.hpp</in>
+            <in>int_manager.hpp</in>
+            <in>io_apic.hpp</in>
+            <in>ipi.hpp</in>
+            <in>local_apic.hpp</in>
+            <in>mp_infos.hpp</in>
+          </df>
+          <df name="src">
+            <df name="x86-64">
+              <in>idt.cpp</in>
+              <in>int_manager.cpp</in>
+            </df>
+            <in>idt.cpp</in>
+            <in>int_manager.ipp</in>
+            <in>io_apic.cpp</in>
+            <in>ipi.cpp</in>
+            <in>local_apic.cpp</in>
+          </df>
+          <in>HInterprocessInterrupt</in>
+          <in>HInterruptDescriptorTable</in>
+          <in>HInterruptManager</in>
+          <in>HLocalAPIC</in>
+          <in>HMultiProcessor</in>
+          <in>HPowerManagement</in>
+        </df>
+        <df name="system">
+          <df name="include">
+            <df name="x86-64">
+              <in>system_infos.hpp</in>
+              <in>system_int_manager.hpp</in>
+              <in>system_vmm.hpp</in>
+            </df>
+            <in>access_ctrl.hpp</in>
+            <in>error_codes.hpp</in>
+            <in>icxxabi.hpp</in>
+            <in>multiboot.hpp</in>
+            <in>multiboot2.hpp</in>
+            <in>pci.hpp</in>
+            <in>pci_infos.hpp</in>
+            <in>pre_mm.hpp</in>
+            <in>system.hpp</in>
+            <in>system_asm.hpp</in>
+            <in>system_helper.hpp</in>
+            <in>system_hmm.hpp</in>
+            <in>system_infos.hpp</in>
+            <in>system_internal.hpp</in>
+            <in>system_isr.hpp</in>
+            <in>system_manager.hpp</in>
+            <in>system_pmm.hpp</in>
+            <in>system_terminal.hpp</in>
+          </df>
+          <df name="src">
+            <df name="x86-64">
+              <in>ap_init.asm</in>
+              <in>cpu_functions.asm</in>
+              <in>enable_64bit.asm</in>
+              <in>init.asm</in>
+              <in>system.cpp</in>
+              <in>system_int_manager.cpp</in>
+              <in>system_isr.asm</in>
+              <in>system_vmm.cpp</in>
+            </df>
+            <in>access_ctrl.cpp</in>
+            <in>boot.asm</in>
+            <in>error_handler.cpp</in>
+            <in>icxxabi.cpp</in>
+            <in>main.cpp</in>
+            <in>pci.cpp</in>
+            <in>system.cpp</in>
+            <in>system_asm.cpp</in>
+            <in>system_helper.cpp</in>
+            <in>system_helper.ipp</in>
+            <in>system_hmm.cpp</in>
+            <in>system_internal.cpp</in>
+            <in>system_manager.cpp</in>
+            <in>system_pmm.cpp</in>
+            <in>system_terminal.cpp</in>
+          </df>
+          <in>HSystem</in>
+          <in>HSystemHeapMemoryManager</in>
+          <in>HSystemInfos</in>
+          <in>HSystemInterruptManager</in>
+          <in>HSystemManager</in>
+          <in>HSystemPhysicalMemoryManager</in>
+          <in>HSystemTerminal</in>
+          <in>HSystemVirtualMemoryManager</in>
+        </df>
+        <df name="visual">
+          <df name="include">
+            <in>terminal.hpp</in>
+          </df>
+          <df name="src">
+            <in>terminal.ipp</in>
+          </df>
+          <in>HTerminal</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>../../makefile</itemPath>
+    </logicalFolder>
+    <itemPath>../../build/makefile</itemPath>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>..</Elem>
+    <Elem>../../src</Elem>
+    <Elem>../../build</Elem>
+    <Elem>../../bin</Elem>
+  </sourceRootList>
+  <projectmakefile>../../makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0"
+                 commonFlags="-m64 -nostdlib -nostdinc -ffreestanding -O2 -fno-exceptions -fno-rtti -std=c++11"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../..</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile</buildCommand>
+          <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
+          <executablePath>../../test.iso</executablePath>
+          <ccTool>
+            <standard>8</standard>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="../../bin/boot/grub/grub.cfg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../bin/hybros-kernel.elf" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../debug.log" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/bitfield.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/bitmap.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/bits.ipp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/data_convert.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/data_extract.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/dynamic_memory.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/helper.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/integer.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/integer_helper.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/list.ipp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/memory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/memory.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/pointer_scoped.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/pointer_shared.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/pointer_unique.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/reference.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/reference_counter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/reference_server.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/search.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/string.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/string.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/vector.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/hstd/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/x86-64/bits.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/hstd/src/x86-64/exception.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/memory/src/hmm.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/memory/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/memory/src/pmm.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/memory/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/memory/src/vmm.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/memory/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/memory/src/x86-64/paging_structs.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="../../src/kernel/modules/memory-managers/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <item path="../../src/kernel/processor/src/idt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/processor/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/processor/src/int_manager.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/processor/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/processor/src/io_apic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/processor/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/processor/src/ipi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/processor/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/processor/src/local_apic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/processor/src/x86-64/idt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/processor/src/x86-64/int_manager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/processor/src/x86-64</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/access_ctrl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/system/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/error_handler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/system/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/icxxabi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/pci.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/system/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_asm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_helper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/system/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_helper.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/system/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incFile>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_hmm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_internal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_manager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_pmm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/system_terminal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system_int_manager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system_vmm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="8">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../src/kernel/visual/src/terminal.ipp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+      </item>
+      <folder path="1/kernel/hstd">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/hstd/src/x86-64">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/memory">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/memory/src/x86-64">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/memory/src/x86-64</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+          </incFile>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/modules">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/modules/memory-managers</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+          </incFile>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/system">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/system/src/x86-64">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/modules</pElem>
+            <pElem>../../src/kernel/build/x86-64</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="1/kernel/visual">
+        <ccTool>
+          <incDir>
+            <pElem>../../src/kernel/hstd</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/visual/src</pElem>
+          </incDir>
+          <incFile>
+            <pElem>../../src/kernel/system</pElem>
+            <pElem>../../src</pElem>
+            <pElem>../../src/kernel/memory</pElem>
+            <pElem>../../src/kernel/visual</pElem>
+            <pElem>../../src/kernel/processor</pElem>
+            <pElem>../../src/kernel/hstd</pElem>
+          </incFile>
+        </ccTool>
+      </folder>
+    </conf>
+    <conf name="NewConfiguration" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../..</buildCommandWorkingDir>
+          <buildCommand>${MAKE}</buildCommand>
+          <cleanCommand>${MAKE} clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="../../bin/boot/grub/grub.cfg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../bin/hybros-kernel.elf" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../build/makefile" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../build/rebuild.bat" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../build/ssh_cmd.bat" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../build/ssh_cmd.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../debug.log" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/build/x86/vmm.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HBitOperations"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HBitfield" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HBitmap" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HExceptions" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HInteger" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HList" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HSharedPointer"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HStdHelper" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HStdMath" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HStdTypes" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HString" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HTuple" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/HVector" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/cMemory" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/cString" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/bitfield.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/bitmap.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/bits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/data_convert.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/data_extract.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/dynamic_memory.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/helper.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/integer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/integer_helper.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/list.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/math.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/memory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/memory.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/pointer_scoped.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/pointer_shared.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/pointer_unique.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/reference.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/reference_counter.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/reference_server.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/search.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/string.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/string.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/tuple.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/type_info.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/variant.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/vector.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86-64/bits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86-64/data_types.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86-64/exception.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86-64/integer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86/bits.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86/data_types.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86/exceptions.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/include/x86/integer.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/bitfield.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/bitmap.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/bits.ipp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/data_convert.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/data_extract.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/dynamic_memory.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/helper.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/integer.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/integer_helper.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/list.ipp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/memory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/memory.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/pointer_scoped.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/pointer_shared.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/pointer_unique.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/reference.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/reference_counter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/reference_server.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/search.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/string.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/string.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/vector.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/x86-64/bits.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/x86-64/exception.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/x86-64/memory.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/hstd/src/x86-64/string.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/HHeapMemoryManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/HPhysicalMemoryManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/HVirtualMemoryManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/include/hmm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/include/pmm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/include/vmm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/include/x86-64/paging_structs.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/src/hmm.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/src/pmm.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/src/vmm.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/memory/src/x86-64/paging_structs.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/modules/memory-managers/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/HInterprocessInterrupt"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/HInterruptDescriptorTable"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/HInterruptManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/HLocalAPIC"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/HMultiProcessor"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/HPowerManagement"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/acpi_infos.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/gdt.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/idt.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/int_manager.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/io_apic.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/ipi.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/local_apic.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/mp_infos.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/include/x86-64/idt.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/idt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/int_manager.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/io_apic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/ipi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/local_apic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/x86-64/idt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/processor/src/x86-64/int_manager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystem" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemHeapMemoryManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemInfos"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemInterruptManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemPhysicalMemoryManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemTerminal"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/HSystemVirtualMemoryManager"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/access_ctrl.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/error_codes.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/icxxabi.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/multiboot.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/multiboot2.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/pci.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/pci_infos.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/pre_mm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_asm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_helper.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_hmm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_infos.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_internal.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_isr.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_manager.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_pmm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/system_terminal.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/x86-64/system_infos.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/x86-64/system_int_manager.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/include/x86-64/system_vmm.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/access_ctrl.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/boot.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/error_handler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/icxxabi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/pci.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_asm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_helper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_helper.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_hmm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_internal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_manager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_pmm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/system_terminal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/ap_init.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/cpu_functions.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/enable_64bit.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/init.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system_int_manager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system_isr.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/system/src/x86-64/system_vmm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/visual/HTerminal" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/kernel/visual/include/terminal.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/kernel/visual/src/terminal.ipp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

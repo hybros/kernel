@@ -1,0 +1,6 @@
+#ifndef __HSYSTEMTERMINAL__
+#define __HSYSTEMTERMINAL__
+
+#include "include/system_terminal.hpp"
+
+#endif

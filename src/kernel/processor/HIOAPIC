@@ -1,0 +1,7 @@
+#ifndef __HIOAPIC__
+#define __HIOAPIC__
+
+#include "include/io_apic.hpp"
+//#include "src/io_apic.ipp"
+
+#endif

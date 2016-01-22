@@ -1,0 +1,4 @@
+cd "~/Dropbox/os_dev/Multipe OS Boot/src"
+make
+cp kernelbin ../bin/mosb/boot/kernel.bin
+../build/gen_iso.sh

@@ -1,0 +1,24 @@
+                                     || MOSB  Multi-OS-Boot || -> Name noch verbesserungswürdig
+
+- GRUB2 Bootloader 
+- Kernel initialisieren
+ -> Long Mode, CPUs init., Paging (nötig?), Higher Half (nötig?), Speicher-Manager
+ -> Konfigurationsdatei/en suchen und entsprechend vorgehen
+ -> Festplatte/n nach Windows- und Linux-Bootloadern/Kerneln durchsuchen
+- Kernel nach derzeitigen Konfig.-Regeln booten
+ -> Kernelthreads in Windows-Kernel starten
+/-> Linux-Kernel-Threads sollten sich im Laufe des Bootvorgangs selbst starten
+ -> Kommunikation initialisieren (noch keine Idee, wie)
+- Erstmalige Installation überprüfen 
+  wenn 
+  'ja' -> Windows-Installationsprogramm starten (Windows-Treiber (nötig?), Windows-Konfig.) 
+      /-> Linux ebenfalls (Treiber (nötig?))
+  'nein' -> Ignorieren
+- GUI starten lassen bzw. NB-GUI verhindern
+  -> Loginbild der NB-GUI verhindern
+- Login abwarten
+  wenn
+  'ja' -> Einloggen über Kernel-Thread in NB-GUI-OS 
+  'nein' -> warten
+ 
+ - Nur Quellcode verfügbar machen, der entsprechend der Zielplatform und/oder -computer kompiliert wird

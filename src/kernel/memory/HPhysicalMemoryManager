@@ -1,0 +1,7 @@
+#ifndef __HPHYSICALMEMORYMANAGER__
+#define __HPHYSICALMEMORYMANAGER__
+
+#include "include/pmm.hpp"
+#include "src/pmm.ipp"
+
+#endif

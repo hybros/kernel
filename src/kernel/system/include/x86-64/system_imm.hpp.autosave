@@ -1,0 +1,24 @@
+#ifndef __SYSTEM_INTERRUPT_MANAGER__
+#define __SYSTEM_INTERRUPT_MANAGER__
+
+#include <HInterruptManager>
+#include <HString>
+#include <HVector>
+
+namespace kernel
+{
+
+class HSystem::InterruptManager : public HInterruptManager
+{
+public:
+    InterruptManager();
+    ~InterruptManager();
+    
+    
+private:
+    HVector<HString> int_message;
+};
+
+}
+
+#endif

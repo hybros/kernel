@@ -1,0 +1,6 @@
+#ifndef __HSYSTEMMANAGER__
+#define __HSYSTEMMANAGER__
+
+#include "include/system_manager.hpp"
+
+#endif

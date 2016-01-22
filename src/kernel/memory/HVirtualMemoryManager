@@ -1,0 +1,15 @@
+#ifndef __HVIRTUALMEMORYMANAGER__
+#define __HVIRTUALMEMORYMANAGER__
+
+#include "include/vmm.hpp"
+#include "src/vmm.ipp"
+
+#ifdef __x86_64__ || _M_X64
+#include "include/x86-64/paging_structs.hpp"
+#include "src/x86-64/paging_structs.ipp"
+#else
+#include "include/x86/paging_structs.hpp"
+#include "src/x86/paging_structs.ipp"
+#endif
+
+#endif
