@@ -1,0 +1,84 @@
+#ifndef __STANDARD_KERNEL_HEAP_IMPLEMENTATION__
+#define __STANDARD_KERNEL_HEAP_IMPLEMENTATION__
+
+#include "hmm_temp.hpp"
+#include "../std/data_types.hpp"
+#include "../std/bitmap.hpp"
+#include "../system/system.hpp"
+
+namespace kernel
+{
+namespace memory
+{
+
+class BitmapHeap : public std::Bitmap<ulong>, public HeapMemoryManagementTemplate
+{
+public:
+    inline BitmapHeap(HeapMemoryMgmt *prev, HeapMemoryMgmt *next, size_t needed_memory_size = 0);
+    inline BitmapHeap(HeapMemoryMgmt *prev, HeapMemoryMgmt *next, ulong memory_start_address, ulong memory_end_address);
+    inline ~BitmapHeap();
+
+    void InitHeap(HeapMemoryMgmt *prev, HeapMemoryMgmt *next, size_t needed_memory_size = 0);
+    void InitHeap(HeapMemoryMgmt *prev, HeapMemoryMgmt *next, ulong memory_start_address, ulong memory_end_address);
+    void FreeHeap();
+
+    void *AllocateSpace(size_t memory_size);
+    void FreeSpace(void *memory_address);
+
+    inline HeapMemoryMgmt *GetPrevHeap();
+    inline HeapMemoryMgmt *GetNextHeap();
+    inline void SetPrevHeap(HeapMemoryMgmt *prev);
+    inline void SetNextHeap(HeapMemoryMgmt *next);
+
+    ErrorInfo &GetErrorInfo();
+
+private:
+    System &system;
+    HeapMemoryMgmt *heap_prev, *heap_next;
+    ulong heap_start_address, heap_end_address;
+    ulong heap_used;
+//    ulong *heap_bitmap, heap_bitmap_size;
+    bool is_bitmap_allocated;
+};
+
+// ~ Heap
+
+BitmapHeap::BitmapHeap(HeapMemoryMgmt *prev, HeapMemoryMgmt *next, size_t needed_memory_size) : system(System::GetInstance(THIS))
+{
+    InitHeap(prev, next, needed_memory_size);
+}
+
+BitmapHeap::BitmapHeap(HeapMemoryMgmt *prev, HeapMemoryMgmt *next, ulong memory_start_address, ulong memory_end_address) : system(System::GetInstance(THIS))
+{
+    InitHeap(prev, next, memory_start_address, memory_end_address);
+}
+
+BitmapHeap::~BitmapHeap()
+{
+    FreeHeap();
+}
+
+HeapMemoryMgmt *BitmapHeap::GetPrevHeap()
+{
+    return heap_prev;
+}
+
+HeapMemoryMgmt *BitmapHeap::GetNextHeap()
+{
+    return heap_next;
+}
+
+void BitmapHeap::SetPrevHeap(HeapMemoryMgmt *prev)
+{
+    heap_prev = prev;
+}
+
+void BitmapHeap::SetNextHeap(HeapMemoryMgmt *next)
+{
+    heap_next = next;
+}
+
+}
+}
+
+#endif //__STANDARD_KERNEL_HEAP_IMPLEMENTATION__

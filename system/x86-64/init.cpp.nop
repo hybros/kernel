@@ -1,0 +1,36 @@
+#define  LOADER 1
+#include "../multiboot.hpp"
+#include "../multiboot2.hpp"
+#include "../system.hpp"
+#include "../../kstd/data_types.hpp"
+using namespace kernel;
+
+inline void DoNothing()
+{
+    for(ulong i = 0; i < 999999999; i++) {__asm__ __volatile__("nop");}
+}
+
+extern "C" void kinit(size_t boot_magic, void *boot_info)                                //Multiboot Magic, Multiboot Info
+{
+//    Terminal terminal;
+
+//    bool is_mb2 = false;
+//    if(boot_magic == multiboot::MULTIBOOT_BOOTLOADER_MAGIC)
+//    {
+//        terminal << info << "Loaded by Multiboot compilant bootloader." << video::endl;
+//    }
+//    else if(boot_magic == multiboot2::MULTIBOOT_BOOTLOADER_MAGIC)
+//    {
+//        terminal << info << "Loaded by Multiboot2 compilant bootloader." << video::endl;
+//        is_mb2 = true;
+//    }
+//    else
+//        terminal << warning << "Not loaded by a Multiboot compilant bootloader!" << video::endl;
+
+//    if(System::CheckFor64bitCompatibility(terminal))
+//        terminal << info << "We can boot 64bit kernel." << video::endl;
+//    else
+//        terminal << info << "We can boot 32bit kernel." << video::endl;
+
+
+}

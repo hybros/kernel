@@ -1,0 +1,59 @@
+#ifndef __STANDARD_PHYSICAL_MEMORY_MANAGER__
+#define __STANDARD_PHYSICAL_MEMORY_MANAGER__
+
+#include "pmm_temp.hpp"
+#include "../std/data_types.hpp"
+
+namespace kernel
+{
+namespace memory
+{
+
+class StandardPhysicalMemoryManager : PhysicalMemoryManagerTemplate
+{
+public:
+    StandardPhysicalMemoryManager();
+    ~StandardPhysicalMemoryManager();
+
+    void* AllocateBlock();
+    void* AllocateBlocks(size_t number_of_blocks);
+    void  FreeBlock(void* block_address);
+    void  FreeBlocks(void* block_address, size_t number_of_blocks);
+
+    void InitRegion(ulong base, size_t size);
+    void DeinitRegion(ulong base, size_t size);
+
+    inline uint GetMaxBlocks()  {return max_blocks;}
+    inline uint GetUsedBlocks() {return used_blocks;}
+    inline uint GetFreeBlocks() {return max_blocks - used_blocks;}
+    inline uint GetBlockSize()  {return BLOCK_SIZE;}
+
+    inline void* GetMemoryMapAddress() {return reinterpret_cast<void*>(memory_map);}
+    inline uint  GetMemoryMapSize()    {return memory_map_size;}
+    inline uint  GetKernelImageSize()  {return kernel_image_size;}
+
+    int DetectMemory(memory::smap_entry* buffer, int max_entries);
+
+    inline void SetBit  (int bit) {memory_map[bit / 32] |= (1 << (bit % 32));}
+    inline bool UnsetBit(int bit) {return memory_map[bit / 32] & (1 << (bit % 32));}
+    inline bool TestBit (int bit) {return memory_map[bit / 32] & (1 << (bit % 32));}
+    int FindFirstFreeBit();
+    int FindFirstFreeBit(size_t number_of_blocks);
+
+    void load_pdbr(uint physical_addr) {__asm__ __volatile__("mov %0, %%cr3" :: "a"(physical_addr));}
+    void get_pdbr(uint physical_addr)  {__asm__ __volatile__("mov %%cr3, %0" : "=p"(physical_addr));}
+
+private:
+    uint *memory_map, memory_map_size, pmm_memory_size;
+    uint  used_blocks, max_blocks;
+    multiboot::multiboot_info* boot_info;
+    uint  kernel_image_size;
+
+    StandardPhysicalMemoryManager(multiboot::multiboot_info* multiboot_info, size_t memory_size); //{InitPhysicalMemoryManager(multiboot_info, memory_size);}
+
+};
+
+}
+}
+
+#endif // __STANDARD_PHYSICAL_MEMORY_MANAGER__
