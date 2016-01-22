@@ -1,4 +1,0 @@
-#ifndef __VIRTUAL_MEMORY_MANAGER__
-#define __VIRTUAL_MEMORY_MANAGER__
-
-#endif
