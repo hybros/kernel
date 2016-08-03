@@ -4,7 +4,7 @@
 
 This is C++14 x86/x86-64 kernel to explore new features and bring different ideas together.
 E.g. I want to integrate a Garbage Collector and checkout if this could even make a kernel more secure.
-This would also make it possible to write kernel code in modern high level languages like [Go](https://www.go-lang.org/) or [Crystal](https://www.crystal-lang.org/)
+This would also make it possible to write kernel code in modern high level languages like [Go](https://www.golang.org/) or [Crystal](http://crystal-lang.org/)
 (BTW: my current favorite) beside what already is possible with [Rust](https://www.rust-lang.org/).
 
 Another idea is to include Linux as a subkernel plus userspace so existing programs can be run on HYBROS.
