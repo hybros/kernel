@@ -1,7 +1,0 @@
-#ifndef __HTERMINAL__
-#define __HTERMINAL__
-
-#include "include/terminal.hpp"
-#include "src/terminal.ipp"
-
-#endif

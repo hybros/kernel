@@ -1,0 +1,7 @@
+#ifndef __HUNIQUEPOINTER__
+#define __HUNIQUEPOINTER__
+
+#include "include/pointer_unique.hpp"
+#include "src/pointer_unique.ipp"
+
+#endif

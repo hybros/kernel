@@ -1,0 +1,12 @@
+#ifndef __HSYSTEMVIRTUALMEMORYMANAGER__
+#define __HSYSTEMVIRTUALMEMORYMANAGER__
+
+#if __x86_64__
+#include "include/x86-64/system_vmm.hpp"
+//#include "src/x86-64/vmm_standard.ipp"
+#else
+#include "include/x86/system_vmm.hpp"
+//#include "src/x86/vmm_standard.ipp"
+#endif
+
+#endif

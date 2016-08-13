@@ -1,6 +1,0 @@
-#ifndef __HMULTIPROCESSOR__
-#define __HMULTIPROCESSOR__
-
-#include "include/mp_infos.hpp"
-
-#endif

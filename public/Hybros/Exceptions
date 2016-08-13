@@ -1,0 +1,10 @@
+#ifndef __HEXCEPTIONS__
+#define __HEXCEPTIONS__
+
+#ifdef __x86_64__
+#include "include/x86-64/exception.hpp"
+#else
+#include "include/x86/exception.hpp"
+#endif
+
+#endif

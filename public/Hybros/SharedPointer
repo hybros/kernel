@@ -1,0 +1,7 @@
+#ifndef __HSHAREDPOINTER__
+#define __HSHAREDPOINTER__
+
+#include "include/pointer_shared.hpp"
+#include "src/pointer_shared.ipp"
+
+#endif

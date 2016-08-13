@@ -1,7 +1,0 @@
-#ifndef __HIPI__
-#define __HIPI__
-
-#include "include/ipi.hpp"
-//#include "src/ipi.ipp"
-
-#endif

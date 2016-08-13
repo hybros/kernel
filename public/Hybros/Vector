@@ -1,0 +1,7 @@
+#ifndef __HVECTOR__
+#define __HVECTOR__
+
+#include "include/vector.hpp"
+#include "src/vector.ipp"
+
+#endif

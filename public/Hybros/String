@@ -1,0 +1,7 @@
+#ifndef __HSTRING__
+#define __HSTRING__
+
+#include "include/string.hpp"
+#include "src/string.ipp"
+
+#endif

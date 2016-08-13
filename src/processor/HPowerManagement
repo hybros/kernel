@@ -1,6 +1,0 @@
-#ifndef __HPOWERMANAGEMENT__
-#define __HPOWERMANAGEMENT__
-
-#include "include/acpi_infos.hpp"
-
-#endif

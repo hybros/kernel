@@ -1,0 +1,6 @@
+#ifndef __HSYSTEMINTERRUPTMANAGER__
+#define __HSYSTEMINTERRUPTMANAGER__
+
+#include "include/x86-64/system_int_manager.hpp"
+
+#endif

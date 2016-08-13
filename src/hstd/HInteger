@@ -1,9 +1,0 @@
-#ifndef __HINTEGER__
-#define __HINTEGER__
-
-//#include "include/integer.hpp"
-//#include "include/integer_helper.hpp"
-//#include "src/integer.ipp"
-//#include "src/integer_helper.ipp"
-
-#endif

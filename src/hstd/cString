@@ -1,6 +1,0 @@
-#ifndef __CHSTRING__
-#define __CHSTRING__
-
-#include "include/string.h"
-
-#endif

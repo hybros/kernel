@@ -1,7 +1,0 @@
-#ifndef __HLOCALAPIC__
-#define __HLOCALAPIC__
-
-#include "include/local_apic.hpp"
-//#include "src/local_apic.ipp"
-
-#endif

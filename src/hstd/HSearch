@@ -1,7 +1,0 @@
-#ifndef __HSEARCH__
-#define __HSEARCH__
-
-#include "include/search.hpp"
-#include "src/search.ipp"
-
-#endif

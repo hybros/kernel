@@ -1,7 +1,0 @@
-#ifndef __HSYSTEMPHYSICALMEMORYMANAGER__
-#define __HSYSTEMPHYSICALMEMORYMANAGER__
-
-#include "include/system_pmm.hpp"
-//#include "pmm_standard.ipp"
-
-#endif

@@ -1,7 +1,0 @@
-#ifndef __HINTERRUPTMANAGER__
-#define __HINTERRUPTMANAGER__
-
-#include "include/int_manager.hpp"
-#include "src/int_manager.ipp"
-
-#endif
