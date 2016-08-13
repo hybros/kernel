@@ -1,4 +1,4 @@
-subdir('build')
+subdir('arch')
 
 src_sys = [
   'system/src/icxxabi.cpp',
