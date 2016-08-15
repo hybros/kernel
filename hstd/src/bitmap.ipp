@@ -1,7 +1,7 @@
 #include "../include/bitmap.hpp"
 
-#include <cMemory>
-#include <HBitOperations>
+#include <Hybros/cMemory>
+#include <Hybros/BitOperations>
 
 template<typename T>
 HBitmap<T>::HBitmap() : bitmap_pointer(nullptr), bitmap_size(0) {}

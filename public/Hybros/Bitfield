@@ -1,7 +1,7 @@
 #ifndef __HBITFIELD__
 #define __HBITFIELD__
 
-#include "include/bitfield.hpp"
+#include "../../hstd/include/bitfield.hpp"
 //#include "src/bitfield.ipp"
 
 #endif

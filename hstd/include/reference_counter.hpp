@@ -1,7 +1,7 @@
 #ifndef __REFERENCE_COUNTER__
 #define __REFERENCE_COUNTER__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 class HReferenceCounter
 {

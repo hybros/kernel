@@ -1,7 +1,7 @@
 #ifndef __SYSTEM_INFO_AND_GENERAL_STRUCTURES__
 #define __SYSTEM_INFO_AND_GENERAL_STRUCTURES__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 extern "C"
 {

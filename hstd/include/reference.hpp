@@ -1,9 +1,9 @@
 #ifndef __REFERENCE_WITH_ID__
 #define __REFERENCE_WITH_ID__
 
-#include <HStdTypes>
-#include <HInteger>
-#include <HList>
+#include <Hybros/StdTypes>
+#include <Hybros/Integer>
+#include <Hybros/List>
 
 template<class T> class HReferenceServer;
 

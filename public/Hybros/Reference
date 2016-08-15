@@ -1,7 +1,7 @@
 #ifndef __HREFERENCE__
 #define __HREFERENCE__
 
-//#include "include/reference.hpp"
-//#include "src/reference.ipp"
+//#include "../../hstd/include/reference.hpp"
+//#include "../../hstd/src/reference.ipp"
 
 #endif

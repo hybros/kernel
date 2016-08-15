@@ -1,12 +1,10 @@
 #ifndef __SYSTEM_CONTROL_CLASS__
 #define __SYSTEM_CONTROL_CLASS__
 
-#include <HStdHelper>
-#include <HInteger>
-#include <HList>
-#include <HVector>
-#include <HMultiProcessor>
-#include <HPowerManagement>
+#include <Hybros/StdHelper>
+#include <Hybros/Integer>
+#include <Hybros/List>
+#include <Hybros/Vector>
 
 #include "system_infos.hpp"
 #include "multiboot.hpp"

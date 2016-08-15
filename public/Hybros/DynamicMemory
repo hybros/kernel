@@ -1,7 +1,7 @@
 #ifndef __HDYNAMICMEMORY__
 #define __HDYNAMICMEMORY__
 
-#include "include/dynamic_memory.hpp"
-#include "src/dynamic_memory.ipp"
+#include "../../hstd/include/dynamic_memory.hpp"
+#include "../../hstd/src/dynamic_memory.ipp"
 
 #endif

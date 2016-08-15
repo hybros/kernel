@@ -1,7 +1,7 @@
 #ifndef __STRING_MANIPULATION_FUNCTIONS__
 #define __STRING_MANIPULATION_FUNCTIONS__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 class HString
 {

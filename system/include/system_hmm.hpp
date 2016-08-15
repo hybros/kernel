@@ -1,10 +1,10 @@
 #ifndef __STANDARD_KERNEL_HEAP_IMPLEMENTATION__
 #define __STANDARD_KERNEL_HEAP_IMPLEMENTATION__
 
-#include <HBitmap>
-#include <HList>
-#include <HVector>
-#include <HHeapMemoryManager>
+#include <Hybros/Bitmap>
+#include <Hybros/List>
+#include <Hybros/Vector>
+#include <Hybros/HeapMemory/Manager>
 
 class HSystemHeap;
 class HSystemHeapChunk;

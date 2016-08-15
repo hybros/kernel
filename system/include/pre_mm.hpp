@@ -1,7 +1,7 @@
 #ifndef __PRE_MEMORY_MANAGEMENT__
 #define __PRE_MEMORY_MANAGEMENT__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 inline void *operator new (size_t size, void *address) throw()
 {

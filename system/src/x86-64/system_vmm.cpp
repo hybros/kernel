@@ -1,7 +1,7 @@
 #include "../../include/x86-64/system_vmm.hpp"
 
 #include <Hybros/System>
-#include <HTerminal>
+#include <Hybros/Terminal>
 
 #include "../../include/system_manager.hpp"
 

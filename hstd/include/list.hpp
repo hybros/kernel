@@ -1,9 +1,9 @@
 #ifndef __LIST_CLASS__
 #define __LIST_CLASS__
 
-#include <HStdHelper>
-#include <HStdTypes>
-#include <cMemory>
+#include <Hybros/StdHelper>
+#include <Hybros/StdTypes>
+#include <Hybros/cMemory>
 
 template<class T>
 class HList

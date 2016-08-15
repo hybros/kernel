@@ -1,10 +1,10 @@
 #ifndef __STANDARD_PHYSICAL_MEMORY_MANAGER__
 #define __STANDARD_PHYSICAL_MEMORY_MANAGER__
 
-#include <HPhysicalMemoryManager>
-#include <HStdTypes>
-#include <HList>
-#include <HBitmap>
+#include <Hybros/PhysicalMemory/Manager>
+#include <Hybros/StdTypes>
+#include <Hybros/List>
+#include <Hybros/Bitmap>
 
 #include "multiboot.hpp"
 #include "pre_mm.hpp"

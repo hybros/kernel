@@ -1,7 +1,7 @@
 #ifndef __PHYSICAL_MEMORY_TEMPLATES__
 #define __PHYSICAL_MEMORY_TEMPLATES__
 
-#include <HSystemManager>
+#include <Hybros/SystemManager>
 
 namespace Hybros
 {

@@ -1,8 +1,8 @@
 #ifndef __DATA_EXTRACTOR__
 #define __DATA_EXTRACTOR__
 
-#include <HBitOperations>
-#include <HInteger>
+#include <Hybros/BitOperations>
+#include <Hybros/Integer>
 
 template<class R, typename T, T R::* P>
 inline auto ExtractData(R &object) -> T &;

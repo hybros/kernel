@@ -1,8 +1,8 @@
 #include "../include/system_pmm.hpp"
 
-#include <HStdHelper>
-#include <HSystem>
-#include <HBitOperations>
+#include <Hybros/StdHelper>
+#include <Hybros/System>
+#include <Hybros/BitOperations>
 
 // ~ HSystem::PhysicalMemoryManager
 

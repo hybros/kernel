@@ -1,8 +1,8 @@
 #ifndef __MEMORY_OPERATIONS__
 #define __MEMORY_OPERATIONS__
 
-#include <HStdHelper>
-#include <HStdTypes>
+#include <Hybros/StdHelper>
+#include <Hybros/StdTypes>
 
 void *operator new (size_t size);
 

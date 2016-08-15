@@ -1,8 +1,8 @@
 #ifndef __KERNEL_TERMINAL__
 #define __KERNEL_TERMINAL__
 
-#include <HSystem>
-#include <HTerminal>
+#include <Hybros/System>
+#include <Hybros/Terminal>
 
 extern const uchar bin;
 extern const uchar oct;

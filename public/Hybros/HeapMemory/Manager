@@ -1,2 +1,2 @@
-#include "include/hmm.hpp"
-#include "src/hmm.ipp"
+#include "../../../memory/include/hmm.hpp"
+#include "../../../memory/src/hmm.ipp"

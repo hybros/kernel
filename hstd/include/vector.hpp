@@ -1,8 +1,8 @@
 #ifndef __VECTOR_CLASS__
 #define __VECTOR_CLASS__
 
-#include <HStdTypes>
-#include <cMemory>
+#include <Hybros/StdTypes>
+#include <Hybros/cMemory>
 
 ///<summary>
 ///This is a continuous cohesive container for any type of data

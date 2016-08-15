@@ -1,7 +1,7 @@
 #ifndef __INTEGER__
 #define __INTEGER__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 template<typename T>
 class HBitmap;

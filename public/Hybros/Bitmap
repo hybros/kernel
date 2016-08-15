@@ -1,7 +1,7 @@
 #ifndef __HBITMAP__
 #define __HBITMAP__
 
-#include "include/bitmap.hpp"
-#include "src/bitmap.ipp"
+#include "../../hstd/include/bitmap.hpp"
+#include "../../hstd/src/bitmap.ipp"
 
 #endif

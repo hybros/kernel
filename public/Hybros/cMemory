@@ -1,7 +1,7 @@
 #ifndef __CHMEMORY__
 #define __CHMEMORY__
 
-#include "include/memory.h"
-#include "src/memory.ipp"
+#include "../../hstd/include/memory.h"
+#include "../../hstd/src/memory.ipp"
 
 #endif

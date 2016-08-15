@@ -1,7 +1,7 @@
 #ifndef __SYSTEM_MANAGER__
 #define __SYSTEM_MANAGER__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 #include "system.hpp"
 

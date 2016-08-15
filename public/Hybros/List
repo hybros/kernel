@@ -1,7 +1,7 @@
 #ifndef __HLIST__
 #define __HLIST__
 
-#include "include/list.hpp"
-#include "src/list.ipp"
+#include "../../hstd/include/list.hpp"
+#include "../../hstd/src/list.ipp"
 
 #endif

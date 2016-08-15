@@ -1,4 +1,5 @@
 .vscode
+*.o
 Ideen.txt
 Ziele.txt
 test.iso

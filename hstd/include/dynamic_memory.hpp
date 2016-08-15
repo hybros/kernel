@@ -1,8 +1,8 @@
 #ifndef __DYNAMIC_MEMORY__
 #define __DYNAMIC_MEMORY__
 
-#include <HPointer>
-#include <HInteger>
+#include <Hybros/Pointer>
+#include <Hybros/Integer>
 
 class HDynamicMemory
 {

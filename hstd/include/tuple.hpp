@@ -1,7 +1,7 @@
 #ifndef __TUPLE__
 #define __TUPLE__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 // Implementation based on http://codereview.stackexchange.com/questions/44546/very-basic-tuple-implementation
 

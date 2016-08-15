@@ -24,8 +24,7 @@ src_std = [
 ]
 
 kernel = executable('kernel', 
-  src_sys, src_std, 
-  objects : objs_asm,
+  src_sys, src_std, objs_asm,
   cpp_args : [
     '--target=x86_64-pc-none-elf',
     '-march=x86-64',

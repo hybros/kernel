@@ -1,9 +1,9 @@
 #ifndef __HSYSTEM__
 #define __HSYSTEM__
 
-#include "../system/include/system.hpp"
-#include "../system/include/system_helper.hpp"
-#include "../system/include/system_asm.hpp"
-#include "../system/src/system_helper.ipp"
+#include "../../system/include/system.hpp"
+#include "../../system/include/system_helper.hpp"
+#include "../../system/include/system_asm.hpp"
+#include "../../system/src/system_helper.ipp"
 
 #endif

@@ -1,8 +1,8 @@
 #ifndef __DATA_CONVERTER__
 #define __DATA_CONVERTER__
 
-#include <HStdTypes>
-#include <HBitOperations>
+#include <Hybros/StdTypes>
+#include <Hybros/BitOperations>
 
 template<typename T>
 class DataConverter

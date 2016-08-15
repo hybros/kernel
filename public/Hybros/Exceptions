@@ -2,9 +2,9 @@
 #define __HEXCEPTIONS__
 
 #ifdef __x86_64__
-#include "include/x86-64/exception.hpp"
+#include "../../hstd/include/x86-64/exception.hpp"
 #else
-#include "include/x86/exception.hpp"
+#include "../../hstd/include/x86/exception.hpp"
 #endif
 
 #endif

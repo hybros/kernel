@@ -1,7 +1,7 @@
 #ifndef __HBITOPERATIONS__
 #define __HBITOPERATIONS__
 
-#include "include/bits.hpp"
-#include "src/bits.ipp"
+#include "../../hstd/include/bits.hpp"
+#include "../../hstd/src/bits.ipp"
 
 #endif

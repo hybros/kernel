@@ -1,7 +1,7 @@
 #ifndef __BITMAP__
 #define __BITMAP__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 template<typename T>
 class HBitmap

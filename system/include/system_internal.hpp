@@ -1,11 +1,11 @@
 #ifndef __SYSTEM_INTERNAL_STRUCTS__
 #define __SYSTEM_INTERNAL_STRUCTS__
 
-#include <HSystemTerminal>
-#include <HSystemPhysicalMemoryManager>
-#include <HSystemVirtualMemoryManager>
-#include <HSystemHeapMemoryManager>
-#include <HSystemInterruptManager>
+#include <Hybros/SystemTerminal>
+#include <Hybros/SystemPhysicalMemoryManager>
+#include <Hybros/SystemVirtualMemoryManager>
+#include <Hybros/SystemHeapMemoryManager>
+#include <Hybros/SystemInterruptManager>
 
 struct ReservedMemory
 {

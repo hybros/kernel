@@ -1,7 +1,7 @@
 #ifndef __GENERAL_FUNCTIONS__
 #define __GENERAL_FUNCTIONS__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 #define THIS (*this)
 

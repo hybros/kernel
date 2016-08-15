@@ -2,9 +2,9 @@
 #define __HSTDTYPES__
 
 #ifdef __x86_64__
-#include "../hstd/include/x86-64/data_types.hpp"
+#include "../../hstd/include/x86-64/data_types.hpp"
 #else
-#include "../hstd/include/x86/data_types.hpp"
+#include "../../hstd/include/x86/data_types.hpp"
 #endif
 
 #endif

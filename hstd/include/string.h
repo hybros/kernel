@@ -1,7 +1,7 @@
 #ifndef __C_STRING_OPERATIONS__
 #define __C_STRING_OPERATIONS__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 extern "C"
 {

@@ -1,7 +1,7 @@
 #ifndef __BIT_OPERATIONS__
 #define __BIT_OPERATIONS__
 
-#include <HStdTypes>
+#include <Hybros/StdTypes>
 
 // number: number to get its bit; bit: which bit to check
 
